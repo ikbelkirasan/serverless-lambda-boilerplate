@@ -1,0 +1,26 @@
+{
+  "overrides": [
+    {
+      "files": "*.yml",
+      "options": {
+        "tabWidth": 2
+      }
+    },
+    {
+      "files": "*.js",
+      "options": {
+        "tabWidth": 4,
+        "semi": false,
+        "singleQuote": true
+      }
+    },
+    {
+      "files": "*.ts",
+      "options": {
+        "tabWidth": 4,
+        "semi": false,
+        "singleQuote": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+service: serverless-lambda-boilerplate
+
+plugins:
+  - serverless-dotenv-plugin
+  - serverless-plugin-typescript
+
+package:
+  exclude:
+    - node_modules/**
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+functions:
+  hello:
+    handler: src/handler.hello
+    events:
+      - http:
+          path: hello
+          method: get

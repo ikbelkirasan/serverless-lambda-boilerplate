@@ -1,0 +1,33 @@
+{
+  "name": "serverless-lambda-boilerplate",
+  "version": "1.0.0",
+  "description": "Serverless lambda boilerplate",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf .serverless",
+    "test": "jest",
+    "sls": "node --inspect-brk=9229 $(which sls)"
+  },
+  "keywords": [
+    "aws",
+    "lambda",
+    "serverless"
+  ],
+  "author": "ikbel <ikbel.kira@live.fr>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.17",
+    "@types/jest": "^23.3.10",
+    "@types/lambda-tester": "^3.5.1",
+    "@types/node": "^10.12.18",
+    "aws-sdk": "^2.382.0",
+    "jest": "^23.6.0",
+    "lambda-tester": "^3.5.0",
+    "serverless-dotenv-plugin": "^2.0.1",
+    "serverless-offline": "^3.31.3",
+    "serverless-plugin-typescript": "^1.1.5",
+    "ts-jest": "^23.10.5"
+  },
+  "dependencies": {}
+}
